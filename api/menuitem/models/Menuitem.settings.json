@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "menuitems",
+  "info": {
+    "name": "menuitem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "category": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "main",
+        "extension",
+        "drink"
+      ]
+    },
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "price": {
+      "default": "",
+      "type": "integer"
+    },
+    "position": {
+      "default": "",
+      "type": "integer"
+    },
+    "venue": {
+      "model": "venue",
+      "via": "menuitems"
+    }
+  }
+}

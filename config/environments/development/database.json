@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "127.0.0.1",
+        "srv": false,
+        "port": 5432,
+        "database": "games_cms",
+        "username": "postgres",
+        "password": "docker",
+        "ssl": false
+      },
+      "options": {}
+    }
+  }
+}
